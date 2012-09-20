@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/cameraFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    </FrameLayout>
+
+    <com.appunta.android.ui.EyeView
+        android:id="@+id/augmentedView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="96dp"
+        android:layout_height="96dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+
+        <com.appunta.android.ui.RadarView
+            android:id="@+id/radarView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="@drawable/bkg_small"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/AxisOutput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:textColor="#000"
+        android:typeface="monospace"
+        android:visibility="gone" />
+
+</RelativeLayout>

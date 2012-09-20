@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <com.appunta.android.ui.RadarView
+            android:id="@+id/radarView1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bkg" />
+    </FrameLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="1000" />
+
+    <TextView
+        android:id="@+id/degrees"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+    </LinearLayout>
+        
+</LinearLayout>
+
